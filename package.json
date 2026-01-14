@@ -1,0 +1,24 @@
+{
+  "name": "week1",
+  "version": "1.0.0",
+  "description": "[insert readme here :))",
+  "main": "arrow-functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hoopsier/UniMajorWeek1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Hoopsier/UniMajorWeek1/issues"
+  },
+  "homepage": "https://github.com/Hoopsier/UniMajorWeek1#readme",
+  "dependencies": {
+    "date-fns": "^4.1.0"
+  }
+}
