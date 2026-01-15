@@ -1,0 +1,57 @@
+1Q Why does JavaScript output undefined instead of throwing an error in the following code?
+
+console.log(message);
+
+var message = 'Hi there!';
+
+
+1A you used var, which is deprecated due to it being a pain in the ass to debug for it being in scope earlier than when defined, leaving you with an undefined.
+
+
+
+2Q Why does JavaScript throw an error instead of logging undefined in the following code?
+
+console.log(message);
+
+let message = 'Hi there!';
+
+2A let is the new version of var, which isn't defined in scope until after the line it gets defined.
+
+3Q Explain precisely what happens when the following code is executed.
+
+console.log(showMessage());
+
+const showMessage = function(){
+  return 'Hi there!';
+};
+
+3A error: showMessage has not been defined, did you mean `function showMessage(){}` const works in scope the same way as let
+
+4Q Why does JavaScript not throw any errors when the following code is executed?
+
+console.log(showMessage());
+
+function showMessage(){
+  return 'Hi there!';
+}
+
+4A The code executes, because functions get defined before code is executed.
+
+Restructuring:
+
+// 1.
+let values = [10, 20, 30];
+for(let i = 0; i < values.length; i++){
+  console.log(values[i]);
+}
+
+// 2.
+console.log(welcome('Charlie', 'Munger'));
+
+function welcome(first, last) {
+let lastLogin = '1/1/1970';
+  return `Welcome, ${first} ${last}! You last logged in on ${lastLogin}.`
+};
+
+
+
