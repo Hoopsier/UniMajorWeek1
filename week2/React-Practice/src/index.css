@@ -1,0 +1,21 @@
+html {
+  color: #dddd00;
+  background-color: #442266;
+}
+
+p,h1,h2{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+          -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+p{
+  font-size: 26px;
+}
+
+h1{
+  font-size: 46px;
+}
+
+h2{
+  font-size: 36px;
+}
